@@ -2,9 +2,8 @@
 #ifndef _PLAIN_BOX
 #define _PLAIN_BOX
 
-// Set the type of data stored in the box
-typedef double ItemType;
 
+template<class ItemType> // Indicates this is a template definition
 // Declaration for the class PlainBox
 class PlainBox {
 private: 
@@ -25,4 +24,6 @@ public:
     ItemType getItem() const;
 }; // end PlainBox
  
+
+#include "PlainBox.cpp" // Include the implementation file 
 #endif
